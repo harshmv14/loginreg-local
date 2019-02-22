@@ -1,0 +1,13 @@
+body {
+  padding-top: 3.5rem;
+}
+
+#inputEmail, #inputPassword, #inputName, #inputuName{
+  width:500px;
+  margin-top:5px;
+}
+
+.submit{
+  width:400px;
+  margin-top: 20px;
+}

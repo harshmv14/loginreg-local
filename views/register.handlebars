@@ -1,0 +1,19 @@
+<form class="form-signin" method="POST" action="/users/register">
+  <h1 class="h3 mb-3 font-weight-normal">Please Register</h1>
+  {{#if errors}}
+    {{#each errors}}
+      <div class="alert alert-danger">{{msg}}</div>
+    {{/each}}
+  {{/if}}
+  <label for="inputName" class="sr-only">Name</label>
+  <input type="Text" id="inputName" class="form-control" placeholder="Enter Your Name" name="name">
+  <label for="inputName" class="sr-only">User Name</label>
+  <input type="Text" id="inputuName" class="form-control" placeholder="Enter Your User Name" name="username">
+  <label for="inputEmail" class="sr-only">Email address</label>
+  <input type="email" id="inputEmail" class="form-control" placeholder="Enter Your Email address" name="email">
+  <label for="inputPassword" class="sr-only">Password</label>
+  <input type="password" id="inputPassword" class="form-control" placeholder="Enter Password" name="pass">
+  <label for="inputPassword" class="sr-only">Confirm Password</label>
+  <input type="password" id="inputPassword" class="form-control" placeholder="Confirm Password" name="pass2">
+  <button class="btn btn-lg btn-primary btn-block submit" type="submit">Register</button>
+</form
